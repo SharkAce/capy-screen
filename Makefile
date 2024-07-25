@@ -1,5 +1,5 @@
 APP_NAME := CapyScreen
-VERSION := 0.0.1
+VERSION := 0.0.2
 PLATFORM ?= linux
 
 BUILD_DIR = build/$(PLATFORM)

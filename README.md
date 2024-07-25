@@ -20,6 +20,5 @@ After compiling, the application can be started using `make run`.
 A Windows release can be extracted and then launched by executing the `CappyScreen.exe`. The release can also be imported into applications like [Wallpaper Engine](https://store.steampowered.com/app/431960/Wallpaper_Engine/) to use it as a wallpaper.
 
 ## Credit
-Capybara Animation Sheet: [link](https://niffirggames.itch.io/charliethecapybara)
-
-Forest Background: [link](https://www.tumblr.com/namatnieks/175070642600/a-forest-background-i-made-for-coromon-the-game)
+- Capybara Animation Sheet: [link](https://niffirggames.itch.io/charliethecapybara)
+- Forest Background: [link](https://www.tumblr.com/namatnieks/175070642600/a-forest-background-i-made-for-coromon-the-game)

@@ -2,8 +2,10 @@
 #include <ctime>
 #include "capy.hpp"
 
+constexpr float imageScalling = 3.f;
 constexpr float actionTime = 10.f;
 constexpr float idleTime = 3.f;
+constexpr int frameRate = 30;
 
 sf::Vector2u randomLocation(sf::IntRect bounds) {
 	unsigned int x = bounds.left + std::rand() % bounds.width;
@@ -24,8 +26,13 @@ int main() {
 	sf::Texture background;
 	if (!background.loadFromFile("res/background.png")) std::terminate();
 	sf::Sprite backgroundSprite(background);
-	sf::RenderWindow window(sf::VideoMode(background.getSize().x, background.getSize().y), "CapyScreen");
-	window.setFramerateLimit(30);
+	backgroundSprite.setScale(imageScalling, imageScalling);
+
+	int windowWidth = backgroundSprite.getGlobalBounds().width;
+	int windowHeight = backgroundSprite.getGlobalBounds().height;
+	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "CapyScreen");
+	window.setFramerateLimit(frameRate);
+
 	Capy capy;
 
 	auto mouvementBounds = sf::IntRect(250, 265, 550, 150);

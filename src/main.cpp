@@ -28,13 +28,17 @@ int main() {
 	sf::Sprite backgroundSprite(background);
 	backgroundSprite.setScale(imageScalling, imageScalling);
 
+	sf::Texture foreground;
+	if (!foreground.loadFromFile("res/foreground.png")) std::terminate();
+	sf::Sprite foregroundSprite(foreground);
+	foregroundSprite.setScale(imageScalling, imageScalling);
+
 	int windowWidth = backgroundSprite.getGlobalBounds().width;
 	int windowHeight = backgroundSprite.getGlobalBounds().height;
 	sf::RenderWindow window(sf::VideoMode(windowWidth, windowHeight), "CapyScreen");
 	window.setFramerateLimit(frameRate);
 
 	Capy capy;
-
 	auto mouvementBounds = sf::IntRect(250, 265, 550, 150);
 	bool actionStarted = false;
 	bool idle = true;
@@ -81,6 +85,7 @@ int main() {
 		window.clear();
 		window.draw(backgroundSprite);
 		capy.draw(window, currentLocation, flipX);
+		window.draw(foregroundSprite);
 		window.display();
 	}
 

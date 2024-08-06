@@ -3,7 +3,7 @@
 ## Description
 Cappy Screen is a simple animated wallpaper application featuring a capybara in a forest doing basic actions at random loations. The application uses [SFML](https://www.sfml-dev.org/) to render the animations and can be run on both Linux and Windows platforms.
 
-![Application Screenshot](https://cdn.discordapp.com/attachments/684938582518923335/1265674278528094209/image.png?ex=66a25e87&is=66a10d07&hm=f68bfa213d6bf25c82c2799382d5d857784ca4a239d1a61cc7adde1d341bf46a&)
+[![cappy-screen-screenshot](https://tinypic.host/images/2024/08/01/image.md.png)](https://tinypic.host/image/cappy-screen-screenshot.D0UqL2)
 
 ## Building
 ### Linux
